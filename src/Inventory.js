@@ -1,20 +1,26 @@
 import React, {Component} from 'react';
 // var product = require("./product");
 import product from './product';
+import ProductItem from "./ProductItem";
 
-console.log(product);
 class Inventory extends Component{
 	constructor(){
 		super();
+		this.product = product;
 	}
 	render(){
-		// var category = this.props.
+		// console.log(this.product);
+		var category = this.product.data.map((categoryStuff, index)=>{
+			console.log(categoryStuff.name);
+			return (
+				<ProductItem nameOf={categoryStuff.name} priceOf={categoryStuff.price}/>
+			);
+		});
+		console.log(category);
 		return (
-			<table>
-				{/* <TableHeader />
-				<Category />
-				<Category /> */}
-			</table>
+			<div>
+				{category}
+			</div>
 		)
 	}
 }
