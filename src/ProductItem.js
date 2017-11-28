@@ -4,10 +4,14 @@ class ProdcutItem extends Component{
 	render(){
 		console.log(this.props.name);
 		return(
-			<div>
-				<p>{this.props.nameOf}</p>
-				<p>{this.props.priceOf}</p>
-			</div>
+			<tr>
+				<td>
+					{this.props.nameOf}
+				</td>
+				<td>
+					{this.props.priceOf}
+				</td>
+			</tr>
 		)
 	}
 }
