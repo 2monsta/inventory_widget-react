@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import SearchBar from './SearchBar';
-import Inventory from './Inventory';
+import Body from './Body';
 class App extends Component {
   render() {
     return (
       <div className="App container">
-				<div className="row">
-					<SearchBar />
-				</div>
-				<div className="row">
-					<Inventory />
-				</div>
+				<Body />
       </div>
     );
   }

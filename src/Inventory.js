@@ -31,7 +31,9 @@ class Inventory extends Component{
 						<th>Price</th>
 					</tr>
 				</thead>
-				{categoryName}
+				<tbody>
+					{categoryName}
+				</tbody>
 			</table>
 		)
 	}
