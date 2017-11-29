@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class ProdcutItem extends Component{
 	render(){
-		console.log(this.props.name);
+		console.log(this.props.nameOf);
 		return(
 			<tr>
 				<td>

@@ -16,14 +16,14 @@ class Category extends Component{
 			}
 		}
 		return(
-			<div>
+			<tbody>
 				<tr>
 					<td>
 						{this.props.name}
 					</td>
 				</tr>
 				{arr}
-			</div>
+			</tbody>
 		)
 	}
 }

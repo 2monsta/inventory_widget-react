@@ -9,13 +9,15 @@ class Body extends Component{
 			list: <Inventory />
 		}
 	}
+	handleSubmit(newValue){
+		
+		console.log(newValue);
+	}
 	render(){
 		return(
 			<div className="row">
 				<div className="col-sm-12">
-					<form onSubmit={this.handleSubmit}>
-						<SearchBar />
-					</form>
+						<SearchBar onSubmit={this.handleSubmit}/>
 				</div>
 				<div className="col-sm-12">
 					{this.state.list}

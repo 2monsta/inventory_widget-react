@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import product from './product';
 // import ProductItem from "./ProductItem";
 import Category from './Category';
+
 class Inventory extends Component{
 	constructor(){
 		super();
@@ -31,9 +32,7 @@ class Inventory extends Component{
 						<th>Price</th>
 					</tr>
 				</thead>
-				<tbody>
-					{categoryName}
-				</tbody>
+				{categoryName}
 			</table>
 		)
 	}
